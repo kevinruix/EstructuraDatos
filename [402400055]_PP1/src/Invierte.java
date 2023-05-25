@@ -1,11 +1,17 @@
 
 public class Invierte {
-      public int invertir(int n, int inv) {
-        if (n > 0) {
-            return invertir(n , n );
-        } else {
-            return inv;
+     public class Funciones {
+    public static String invierte(int num){
+        String numS = Integer.toString(num);
+        int cont = numS.length();
+        String cadena = "";
+        while(cont >= 0){
+            cadena += numS.charAt(cont);
+            cont --;
         }
-
+        return cadena;
     }
-}
+    public static void main(String[] args) {
+        System.out.println(invierte(1234));
+    }
+     }}
