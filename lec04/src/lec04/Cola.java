@@ -22,8 +22,11 @@ public class Cola {
         if (frente!=null){
             frente=frente.getAtras();
             aux.setAtras(null);
+        }if (frente==null){
+            ultimo=null;
         }
         return aux;
+        
     }
     public String toString() {
         String s="";

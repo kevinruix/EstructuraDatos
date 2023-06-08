@@ -21,7 +21,7 @@ public void encola(NodoC n){
         }
 }
 public boolean encuentra(int x){
-    if(){
+    if(ultimo!=null){
        return false;
     }else{
         return true;
